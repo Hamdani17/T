@@ -52,32 +52,32 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "سداسي حرفين":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(b)
+        s = random.choices(e)
         f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
-        username = ''.join(f)
-        if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f = [c[0], d[0], c[0], c[0], c[0], d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
-
-    elif choice == "ثلاثي":
+        username = "".join(f)
+        else:
+            pass
+    if choice == "ثلاثي":
         c = random.choices(a)
         d = random.choices(b)
         s = random.choices(e)
         f = [c[0], "_", d[0], "_", s[0]]
         username = "".join(f)
-    elif choice == "سداسيات":
+        else:
+            pass
+    if choice == "سداسيات":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
         f = [c[0], c[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = "".join(f)
-    elif choice == "بوتات":
+        else:
+            pass
+    if choice == "بوتات":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(e)
@@ -85,31 +85,36 @@ def gen_user(choice):
         # random.shuffle(f)
         username = "".join(f)
         username = username + "bot"
-
-    elif choice == "خماسي حرفين":
+        else:
+            pass
+    if choice == "خماسي حرفين":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
         f = [c[0], d[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = "".join(f)
-
-    elif choice == "خماسي":
+        else:
+            pass
+    if choice == "خماسي":
         c = random.choices(a)
         d = random.choices(b)
         s = random.choices(e)
         f = [c[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = "".join(f)
-
-    elif choice == "سباعيات":
+        else:
+            pass
+    if choice == "سباعيات":
         c = random.choices(a)
         d = random.choices(b)
         s = random.choices(e)
         f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = "".join(f)
-    elif choice == "تيست":
+        else:
+            pass
+    if choice == "تيست":
         c = random.choices(a)
         d = random.choices(b)
         s = random.choices(e)
