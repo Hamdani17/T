@@ -17,7 +17,6 @@ import datetime
 from payment import *
 from help import *
 from config import *
-from t06bot import *
 from checktele import *
 from yt import *
 
