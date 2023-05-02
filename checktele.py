@@ -70,53 +70,101 @@ def gen_user(choice):
         d = random.choices(b)
         s = random.choices(e)
         f = [c[0], "_", d[0], "_", s[0]]
-        username = "".join(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            s = random.choices(e)
+            f = [c[0], "_", d[0], "_", s[0]]
+            username = ''.join(f)
         else:
             pass
     if choice == "سداسيات":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
+        c = d = random.choices(a)
+        d = random.choices(b)
         f = [c[0], c[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], c[0], c[0], c[0], c[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
         else:
             pass
     if choice == "بوتات":
         c = random.choices(a)
-        d = random.choices(e)
+        d = random.choices(b)
         s = random.choices(e)
         f = [c[0], s[0], d[0]]
-        # random.shuffle(f)
-        username = "".join(f)
-        username = username + "bot"
+        random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            s = random.choices(e)
+            f = [c[0], s[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+            username = username+'bot'
         else:
             pass
     if choice == "خماسي حرفين":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
+        c = d = random.choices(a)
+        d = random.choices(b)
         f = [c[0], d[0], c[0], c[0], d[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], d[0], c[0], c[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
         else:
             pass
     if choice == "خماسي":
-        c = random.choices(a)
+        c = d = random.choices(a)
         d = random.choices(b)
-        s = random.choices(e)
-        f = [c[0], c[0], c[0], c[0], d[0]]
+        f = [c[0], d[0], c[0], c[0], c[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], d[0], c[0], c[0], c[0]]
+            random.shuffle(f)
+            username = ''.join(f)
         else:
             pass
     if choice == "سباعيات":
-        c = random.choices(a)
+        c = d = random.choices(a)
         d = random.choices(b)
-        s = random.choices(e)
         f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
         random.shuffle(f)
-        username = "".join(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "رباعيات":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], d[0], "_", c[0], c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(b)
+            f = [c[0], d[0], "_", c[0], c[0]]
+            random.shuffle(f)
+            username = ''.join(f)
         else:
             pass
     if choice == "تيست":
